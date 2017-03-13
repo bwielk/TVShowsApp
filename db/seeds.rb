@@ -16,18 +16,18 @@ show = Show.create(
     programmeID: "XYV123"
     })
 
-show1 = Show.create([
+show1 = Show.create(
     title: "Desperate Housewives",
     series: 4,
     description: "My fav American tv series",
     image: "https://upload.wikimedia.org/wikipedia/en/c/c1/Desperate_Housewives_season_4_poster.jpg",
     programmeID: "XYV223"
-  ])
+  )
 
-show2 = Show.create([
+show2 = Show.create(
     title: "Ally McBeal",
     series: 2,
     description: "My fav tv series from my childhood",
     image: "https://images-na.ssl-images-amazon.com/images/M/MV5BMTg1NTI0MTUxMl5BMl5BanBnXkFtZTcwODE1MzgyMQ@@._V1_UY268_CR4,0,182,268_AL_.jpg",
     programmeID: "XYd223"
-  ])
+  )

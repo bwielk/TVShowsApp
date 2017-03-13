@@ -1,7 +1,7 @@
 class ShowsController < ApplicationController
 
   def index()
-    @shows = Show.all
+    @shows = Show.all()
     render json: @shows
   end
 
@@ -11,8 +11,15 @@ class ShowsController < ApplicationController
   end
 
   def create()
-    @shows = Show.all
+    @shows = Show.all()
     show = Show.create(show_params)
+    render json: @shows
+  end
+
+  def destroy()
+    @shows = Show.all()
+    @show = Show.find(params[:id])
+    @show.delete()
     render json: @shows
   end
 
